@@ -1,0 +1,115 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Async",
+        "repositoryURL": "https://github.com/vapor/async.git",
+        "state": {
+          "branch": "beta",
+          "revision": "73369be680cc32a71c085b37142f5ccb18301102",
+          "version": null
+        }
+      },
+      {
+        "package": "Console",
+        "repositoryURL": "https://github.com/vapor/console.git",
+        "state": {
+          "branch": "beta",
+          "revision": "9b84e5196144f7a291b539795ecf37fb529717df",
+          "version": null
+        }
+      },
+      {
+        "package": "Core",
+        "repositoryURL": "https://github.com/vapor/core.git",
+        "state": {
+          "branch": "beta",
+          "revision": "25624927fac04de654b263d8d6ff05864e9608d7",
+          "version": null
+        }
+      },
+      {
+        "package": "Crypto",
+        "repositoryURL": "https://github.com/vapor/crypto.git",
+        "state": {
+          "branch": "beta",
+          "revision": "4baa0b5dd98d37c0d71cddc260eaedc84e5a99ea",
+          "version": null
+        }
+      },
+      {
+        "package": "DatabaseKit",
+        "repositoryURL": "https://github.com/vapor/database-kit.git",
+        "state": {
+          "branch": "beta",
+          "revision": "7cc0d43cf60406056c57dcd94ac44fea9ce8d09a",
+          "version": null
+        }
+      },
+      {
+        "package": "Engine",
+        "repositoryURL": "https://github.com/vapor/engine.git",
+        "state": {
+          "branch": "beta",
+          "revision": "0be1a87f70eb139367f3859c304548b39c3376fa",
+          "version": null
+        }
+      },
+      {
+        "package": "Fluent",
+        "repositoryURL": "https://github.com/vapor/fluent.git",
+        "state": {
+          "branch": "beta",
+          "revision": "96250e39532726869e6f8ba701ddb9f0a9c1dc69",
+          "version": null
+        }
+      },
+      {
+        "package": "Service",
+        "repositoryURL": "https://github.com/vapor/service.git",
+        "state": {
+          "branch": "beta",
+          "revision": "0655368ce67c2787727030d091a76d0637c663b0",
+          "version": null
+        }
+      },
+      {
+        "package": "Sockets",
+        "repositoryURL": "https://github.com/vapor/sockets.git",
+        "state": {
+          "branch": "beta",
+          "revision": "7c24cfbe281d9dbb8454ee55c5f821c371e83715",
+          "version": null
+        }
+      },
+      {
+        "package": "TLS",
+        "repositoryURL": "https://github.com/vapor/tls.git",
+        "state": {
+          "branch": "beta",
+          "revision": "735ce0492a006cd7ef49b6691be2450bd8706c4c",
+          "version": null
+        }
+      },
+      {
+        "package": "TemplateKit",
+        "repositoryURL": "https://github.com/vapor/template-kit.git",
+        "state": {
+          "branch": "beta",
+          "revision": "1ce8c2588ba7812bf904668b402f8f91076a33e6",
+          "version": null
+        }
+      },
+      {
+        "package": "Vapor",
+        "repositoryURL": "https://github.com/vapor/vapor.git",
+        "state": {
+          "branch": "beta",
+          "revision": "5d0a48a4dc363fa8762583b2f59991ed6cddcad2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
