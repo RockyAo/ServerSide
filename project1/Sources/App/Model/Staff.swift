@@ -7,4 +7,6 @@
 
 import Foundation
 
-
+struct Test {
+    let a:Int?
+}
