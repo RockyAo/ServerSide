@@ -8,17 +8,21 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     try services.register(FluentSQLiteProvider())
     try services.register(LeafProvider())
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
-
+    
+    
     /// Register routes to the router
     let router = EngineRouter.default()
     try routes(router)
     services.register(router, as: Router.self)
 
     /// Register middleware
-    var middlewares = MiddlewareConfig() // Create _empty_ middleware config
+    var middlewares = MiddlewareConfig.default()// Create _empty_ middleware config
+    
     /// middlewares.use(FileMiddleware.self) // Serves files from `Public/` directory
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
+    middlewares.use(SessionsMiddleware.self)
     services.register(middlewares)
+    config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
 
     //directoryConfig
     let directoryConfig = DirectoryConfig.detect()
@@ -38,5 +42,7 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     migrations.add(model: Message.self, database: .sqlite)
     migrations.add(model: User.self, database: .sqlite)
     services.register(migrations)
+    
+    
 
 }

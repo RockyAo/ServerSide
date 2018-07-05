@@ -9,10 +9,10 @@ import Foundation
 import FluentSQLite
 import Vapor
 
-struct User: Content {
-    var id: Int?
-    var username: String
-    var password: String
+public struct User: Content {
+    public var id: Int?
+    public var username: String
+    public var password: String
 }
 
 extension User: SQLiteModel {}
