@@ -1,0 +1,31 @@
+#set("title") { Home }
+#set("body") { 
+    #if(haters) {
+        <p>Haters  are #(haters)</p>
+    }
+
+    #if(fakers) {
+        <p>Fakers are #(fakers)</p>
+    }
+
+    #if(names) {
+        <h1>Names: </h1>
+        <ul>
+            #for(name in names) {
+                #if(isFirst){
+                    <li>The first name is #(name)</li>
+                }else if (isLast) {
+                    <li>The last name is #(name)</li>
+                }else{
+                    <li>Name number #(index) is #(name)</li>
+                }
+            }
+        </ul>
+        <p>there are #count(names) names</p>
+    }
+}
+
+ #embed("master")
+
+
+ #join(names,",")
