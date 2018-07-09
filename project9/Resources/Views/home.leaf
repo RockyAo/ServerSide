@@ -1,0 +1,11 @@
+#set("title") { Welcome }
+#set("body") {
+    <h1>Code yourself happy</h1>
+    <p class="lead">
+    Need a coder in a hurry? List your project on Instant Coder and we'll match you with a coder availabel for work immediately,
+    from all around the world.
+    </p>
+    <p><a class="btn btn-lg btn-primary" href="/login" role="button">Log in</a></p>
+}
+
+#embed("master")

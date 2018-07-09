@@ -1,0 +1,14 @@
+#set("title"){Welcome}
+#set("body"){
+    <h1>All Projects</h1>
+    <ul>
+        #for(project in projects) {
+            <li class="lead">
+                <strong>#(project.name)</strong> <span class="badge alert-info">#(project.language)</span> <br /> #(project.description)<br />
+                
+            </li>
+	    }
+    </ul>
+}
+
+#embed("master")

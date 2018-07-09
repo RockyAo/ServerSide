@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>#get(title)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+      body {
+        padding-top: 5rem;
+        padding-top: 70px;
+      }
+
+      .main-container {
+        padding: 20px;
+
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .main-container > h1 {
+        margin-top: 0;
+        font-size: 400%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="/">Instant Coder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
+        <ul class="nav nav-tabs">
+          #if(activePage == nil) {
+            <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+          } else {
+            <li class="nav-item"><a href="/projects/mine" #if(activePage == "page_projects_mine") { class="nav-link active" } else { class="nav-link" }>My Projects</a></li>
+            <li class="nav-item"><a href="/projects/all" #if(activePage == "page_projects_all") { class="nav-link active" } else { class="nav-link" }>All Projects</a></li>
+            <li class="nav-item"><a href="/projects/new" #if(activePage == "page_projects_new") { class="nav-link active" } else { class="nav-link" }>Create New</a></li>
+            <li class="nav-item"><a href="/projects/search" #if(activePage == "page_projects_search") { class="nav-link active" } else { class="nav-link" }>Search</a></li>
+          }
+        </ul>
+        <div class="main-container">
+          #get(body)
+        </div>
+      </div> <!-- /container -->
+    </main>
+
+    <footer class="container" style="margin-top: 20px;">
+      <p>Copyright &copy; 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

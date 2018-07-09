@@ -1,0 +1,17 @@
+#set("title"){Welcome}
+
+#set("body") {
+	<h1>Your projects</h1>
+	<ul>
+	#for(project in projects) {
+		<li class="lead">
+			<strong>#(project.name)</strong> <span class="badge alert-info">#(project.language)</span> <br /> #(project.description)<br />
+			<a href="/projects/delete/#(project.id)" class="text-danger" onClick="return confirm('Are you sure you want to delete this?');">Delete?</a>
+		</li>
+	}
+	</ul>
+
+	<p class="lead"><a href="/projects/new">Create a project</a>.</li>
+}
+
+#embed("master")
