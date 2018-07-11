@@ -1,0 +1,8 @@
+#set("body"){
+    #for(story in stories) {
+        <h2><a href="#link(story)">#(story.title)</a></h2>
+        #markdown(story.strap)
+    }
+}
+
+#embed("master")
